@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e7edf8;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #2563EA;
+}
+
+.secondnav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn2 {
+  padding: 10px 20px;
+  background-color: #2563EA;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+
+
+.logo img {
+  width: 90px;
+}
+
+.btnlinks {
+  display: flex;
+  gap: 20px;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 50px 5%;
+}
+
+.first-card {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: #2563EA;
+  border-radius: 10px;
+}
+
+.first-card .card-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.first-card img {
+  width: 100%;
+}
+
+.first-card .card-text button {
+  width: fit-content;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.card-header {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #c3d4f7;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.industries-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .first-card {
+    flex-direction: row;
+  }  
+  /* .cards {
+    justify-content: flex-start;
+  } */
+}
