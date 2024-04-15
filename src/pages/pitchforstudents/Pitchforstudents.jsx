@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../assets/logo.png';
 import { MdEmojiEmotions } from "react-icons/md";
 import { RiUserVoiceFill } from "react-icons/ri";
 
 const Pitchforstudents = () => {
+
+  const [searchText, setSearchText] = useState('')
 
   const data = [
     {
@@ -43,6 +45,11 @@ const Pitchforstudents = () => {
       </header>
       <section className="other-data">
         <section className="templates">
+          <select name="lev" id="lev">
+            
+            <option value="Education">Education</option>
+          </select>
+          <input type="text" value={searchText} placeholder='Search by keyword' onChange={(e) => {setSearchText(e.target.value)}} />
           <div className="template-cards">
           {
           data.map((card, index) => (
@@ -62,7 +69,7 @@ const Pitchforstudents = () => {
             <li>Home ></li>
             <li>Sales ></li>
             <li>Education > </li>
-            <li>Student ></li>
+            <li>Student</li>
           </ul>
         </div>
         <div className="content">

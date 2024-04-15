@@ -157,6 +157,11 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.level ul li:last-child {
+  color: #2563EA;
 }
 
 .content {
@@ -193,11 +198,22 @@ body {
   background-color: #2563EA;
   padding: 10px;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.action-icon {
+  display: flex;
+  flex-direction: column;
 }
 
 audio {
   width: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 .todo-container {
@@ -214,6 +230,11 @@ audio {
   padding: 20px;
   border: 15px solid #2563EA;
   border-radius: 8px;
+}
+
+.todo ol {
+  width: 100%;
+  padding: 0 30px;
 }
 
 .todo-icon {
@@ -241,10 +262,40 @@ audio {
   font-size: 25px;
 }
 
+.templates {
+  display: none;
+}
+
+.templates select {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none !important;
+  background-color: #2563EA;
+}
+
+.templates option {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none !important;
+  background-color: #2563EA;
+
+}
+
+.templates input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #2563EA;
+}
+
 .template-cards {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -255,6 +306,11 @@ audio {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+  }
+  .templates {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   /* .cards {
     justify-content: flex-start;
