@@ -134,10 +134,128 @@ body {
   padding: 20px 0;
 }
 
+.other-data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.level ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.main-card-header {
+  padding: 10px;
+  background-color: #2563EA;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.main-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.action {
+  width: 100%;
+  background-color: #2563EA;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+audio {
+  width: 100%;
+  background-color: transparent;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 15px solid #2563EA;
+  border-radius: 8px;
+}
+
+.todo-icon {
+  font-size: 30px;
+}
+
+.rate-card {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.rate-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.rate-icon {
+  color: #2563EA;
+  font-size: 25px;
+}
+
+.template-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 @media screen and (min-width: 768px) {
   .first-card {
     flex-direction: row;
-  }  
+  } 
+  .other-data {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
   /* .cards {
     justify-content: flex-start;
   } */
